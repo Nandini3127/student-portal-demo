@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevOps Lifecycle</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 700px;
+      height: 700px;
+      position: relative;
+    }
+
+    .stage {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background-color: #4caf50;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: absolute;
+      font-weight: bold;
+    }
+
+    .stage:hover {
+      background-color: #388e3c;
+      cursor: default;
+    }
+
+    /* Position each stage in a circle */
+    .plan     { top: 0%; left: 40%; }
+    .develop  { top: 15%; left: 70%; }
+    .build    { top: 40%; left: 85%; }
+    .test     { top: 65%; left: 70%; }
+    .release  { top: 80%; left: 40%; }
+    .deploy   { top: 65%; left: 10%; }
+    .operate  { top: 40%; left: -5%; }
+    .monitor  { top: 15%; left: 10%; }
+
+    h1 {
+      position: absolute;
+      top: 47%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      color: #333;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>DevOps Lifecycle</h1>
+    <div class="stage plan">Plan-Define business requriments.</div>
+    <div class="stage develop">Develop-Write and manage source code.</div>
+    <div class="stage build">Build-Compile code and build.</div>
+    <div class="stage test">Test-Automatically test.</div>
+    <div class="stage release">Release-Approve and package.</div>
+    <div class="stage deploy">Deploy-Push the code.</div>
+    <div class="stage operate">Operate-Manage the Applicatin in producation.</div>
+    <div class="stage monitor">Monitor-continuosly monitor performance.</div>
+  </div>
+</body>
+</html>
